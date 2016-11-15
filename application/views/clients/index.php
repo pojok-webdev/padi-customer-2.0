@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>        
-    <?php $this->load->view("common/head");?>    
+<head>
+    <style>
+        .text-center{
+            text-align:center;
+        }
+    </style>
+    <?php $this->load->view("common/head");?>
 </head>
 <body>
     <?php $this->load->view("common/header");?>    
