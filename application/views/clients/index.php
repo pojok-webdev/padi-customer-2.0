@@ -40,7 +40,9 @@
                             </div>
 
                             <div class="item clearfix">
-                                <div class="image"><a href="#"><img src="img/users/olga_s.jpg" width="32"/></a></div>
+                                <div class="image">
+                                    <a href="#"><img src="/assets/aquarius/img/users/no-image50.jpg" width="32"/></a>
+                                </div>
                                 <div class="info">
                                     <a href="#" class="name">Prospects</a>                                
                                     <span>2</span>
@@ -48,7 +50,9 @@
                             </div>                        
 
                             <div class="item clearfix">
-                                <div class="image"><a href="#"><img src="/assets/aquarius/img/users/alexey_s.jpg" width="32"/></a></div>
+                                <div class="image">
+                                    <a href="#"><img src="/assets/aquarius/img/users/no-image50.jpg" width="32"/></a>
+                                </div>
                                 <div class="info">
                                     <a href="#" class="name">Survey</a>  
                                     <span>11</span>
@@ -56,14 +60,18 @@
                             </div>                              
                         
                             <div class="item clearfix">
-                                <div class="image"><a href="#"><img src="/assets/aquarius/img/users/dmitry_s.jpg" width="32"/></a></div>
+                                <div class="image">
+                                    <a href="#"><img src="/assets/aquarius/img/users/no-image50.jpg" width="32"/></a>
+                                </div>
                                 <div class="info">
                                     <a href="#" class="name">Install</a>                                    
                                     <span>122</span>
                                 </div>
                             </div>
                             <div class="item clearfix">
-                                <div class="image"><a href="#"><img src="/assets/aquarius/img/users/dmitry_s.jpg" width="32"/></a></div>
+                                <div class="image">
+                                    <a href="#"><img src="/assets/aquarius/img/users/no-image50.jpg" width="32"/></a>
+                                </div>
                                 <div class="info">
                                     <a href="#" class="name">Disconnect</a>
                                     <span>1</span>
@@ -99,6 +107,7 @@
                     </div>
                     <div class="block-fluid table-sorting clearfix">
                         <table cellpadding="0" cellspacing="0" width="100%" class="table" id="tSortable">
+                            <!--
                             <thead>
                                 <tr>
                                     <th>Nama</th>
@@ -136,6 +145,7 @@
                                 </tr>
                                 <?php }?>
                             </tbody>
+                            -->
                         </table>
                     </div>
                 </div>
@@ -143,5 +153,41 @@
             <div class="dr"><span></span></div>
         </div>
     </div>
+    <script type="text/javascript">
+        (function($){
+        /*$.ajax({
+            url:'clients/get',
+            type:'get',
+            dataType:"json"
+        })
+        .done(function(res){
+            console.log(res);
+            $.each(res.data,function(a,b){
+                console.log(b);
+            });
+        })
+        .fail(function(err){
+            console.log("Err",err);
+        });*/
+
+        if($.fn.dataTable.isDataTable("#tSortable")){
+            $("#tSortable").dataTable().destroy();
+        }
+        $("#tSortable").dataTable({
+            ajax:'/clients/get',
+            /*
+            "aoColumns": [
+                { "sWidth": "95px", "sClass": "unupdatable" ,"fieldName":"no"},
+                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"tanggal"},
+                { "sWidth": "95px", "sClass": "unupdatable text-left" ,"fieldName":"keterangan"},
+                { "sWidth": "95px", "sClass": "unupdatable text-right" ,"fieldName":"jumlah"},
+                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"rekening"},
+                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"realisasi"},         
+            ],
+            */
+        })
+
+        }(jQuery))
+    </script>
 </body>
 </html>
