@@ -47,10 +47,10 @@
 
 <script type='text/javascript' src='/assets/aquarius/js/plugins/cleditor/jquery.cleditor.js'></script>
 
-<script type='text/javascript' src='/assets/aquarius/js/plugins/dataTables/jquery.dataTables.min.js'></script>    
-
+<!--<script type='text/javascript' src='/assets/aquarius/js/plugins/dataTables/jquery.dataTables.min.js'></script>-->  
+<!--<link rel="stylesheet" href="/assets/DataTables-1.10.12/datatables.min.css" />-->
 <script type='text/javascript' src='/assets/aquarius/js/plugins/fancybox/jquery.fancybox.pack.js'></script>
-
+<script type='text/javascript' src='/assets/DataTables-1.10.12/datatables.min.js'></script>
 <script type='text/javascript' src='/assets/aquarius/js/cookies.js'></script>
 <script type='text/javascript' src='/assets/aquarius/js/actions.js'></script>
 <script type='text/javascript' src='/assets/aquarius/js/charts.js'></script>

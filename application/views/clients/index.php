@@ -6,7 +6,7 @@
             text-align:center;
         }
     </style>
-    <?php $this->load->view("common/head");?>
+    <?php $this->load->view("aquarius/head");?>
 </head>
 <body>
     <?php $this->load->view("common/header");?>    
@@ -106,8 +106,7 @@
                         </ul>
                     </div>
                     <div class="block-fluid table-sorting clearfix">
-                        <table cellpadding="0" cellspacing="0" width="100%" class="table" id="tSortable">
-                            <!--
+                        <table cellpadding="0" cellspacing="0" width="100%" class="table" id="tSortable1">
                             <thead>
                                 <tr>
                                     <th>Nama</th>
@@ -117,35 +116,6 @@
                                     <th width="10%" class="text-center">Aksi</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <?php foreach($clients as $client){?>
-                                <tr>
-                                    <td><?php echo $client->name;?></td>
-                                    <td><?php echo $client->alias;?></td>
-                                    <td><?php echo $client->am;?></td>
-                                    <td><?php echo $client->address;?></td>
-                                    <td class="text-center">
-                                        <div class="btn-group">
-                                            <button data-toggle="dropdown" class="btn btn-small dropdown-toggle" >Aksi 
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right">
-                                                <li class="submenuheader"><a><?php echo $client->name;?></a></li>
-                                                <li class="btneditclient pointer"><a>Edit</a></li>
-                                                <li class="btnviewsites pointer" ><a>Lihat Cabang</a></li>
-                                                <li class="divider survey_save"></li>
-                                                <li class="btnsurvey"><a href="#">Survey</a></li>
-                                                <li class="divider survey_save"></li>
-                                                <li class="btnsetpadibranch"><a href="#">Set TS Cabang Yang Menangani</a></li>
-                                                <li ><a>Pemindahan AM</a></li>
-                                                <li class="amhistory"><a>AM History</a></li>
-                                            </ul>
-                                        </div>                                        
-                                    </td>                                    
-                                </tr>
-                                <?php }?>
-                            </tbody>
-                            -->
                         </table>
                     </div>
                 </div>
@@ -155,36 +125,21 @@
     </div>
     <script type="text/javascript">
         (function($){
-        /*$.ajax({
-            url:'clients/get',
-            type:'get',
-            dataType:"json"
-        })
-        .done(function(res){
-            console.log(res);
-            $.each(res.data,function(a,b){
-                console.log(b);
-            });
-        })
-        .fail(function(err){
-            console.log("Err",err);
-        });*/
-
-        if($.fn.dataTable.isDataTable("#tSortable")){
-            $("#tSortable").dataTable().destroy();
+        $("#tSortable1").DataTable().destroy();
+        if($.fn.DataTable.isDataTable("#tSortable")){
+            $("#tSortable").DataTable().destroy();
         }
-        $("#tSortable").dataTable({
-            ajax:'/clients/get',
-            /*
+        $("#tSortable1").DataTable({
+            "ajax":'/clients/get',
+            
             "aoColumns": [
-                { "sWidth": "95px", "sClass": "unupdatable" ,"fieldName":"no"},
-                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"tanggal"},
-                { "sWidth": "95px", "sClass": "unupdatable text-left" ,"fieldName":"keterangan"},
-                { "sWidth": "95px", "sClass": "unupdatable text-right" ,"fieldName":"jumlah"},
-                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"rekening"},
-                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"realisasi"},         
+                { "sWidth": "95px", "sClass": "unupdatable" ,"fieldName":"Nama"},
+                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"Alias"},
+                { "sWidth": "95px", "sClass": "unupdatable text-left" ,"fieldName":"AM"},
+                { "sWidth": "95px", "sClass": "unupdatable text-right" ,"fieldName":"Alamat"},
+                { "sWidth": "95px", "sClass": "unupdatable text-center" ,"fieldName":"Aksi"},
             ],
-            */
+            
         })
 
         }(jQuery))
