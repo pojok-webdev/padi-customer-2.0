@@ -50,7 +50,6 @@
     <script type='text/javascript' src='/assets_/js/plugins/dataTables/jquery.dataTables.min.js'></script>    
     
     <script type='text/javascript' src='/assets_/js/plugins/fancybox/jquery.fancybox.pack.js'></script>
-    
     <script type='text/javascript' src='/assets_/js/cookies.js'></script>
     <script type='text/javascript' src='/assets_/js/actions.js'></script>
     <script type='text/javascript' src='/assets_/js/charts.js'></script>

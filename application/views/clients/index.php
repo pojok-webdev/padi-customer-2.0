@@ -6,7 +6,7 @@
             text-align:center;
         }
     </style>
-    <?php $this->load->view("aquarius/head");?>
+    <?php $this->load->view("common/head");?>
 </head>
 <body>
     <?php $this->load->view("common/header");?>    
@@ -130,7 +130,11 @@
             $("#tSortable").DataTable().destroy();
         }
         $("#tSortable1").DataTable({
-            "ajax":'/clients/get',
+            "ajax":
+                {
+                    "url":'/clients/get',
+                    "type":'POST'
+                },
             
             "aoColumns": [
                 { "sWidth": "95px", "sClass": "unupdatable" ,"fieldName":"Nama"},
