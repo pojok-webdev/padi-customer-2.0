@@ -35,8 +35,8 @@ $config['base_url'] = 'http://padi-customer-2.0';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
-
+//$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
