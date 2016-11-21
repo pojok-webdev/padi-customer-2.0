@@ -42,6 +42,11 @@
         </a>
     </li>
     <li>
+        <a href="/installs">
+            <span class="isw-list"></span><span class="text">Install</span>
+        </a>
+    </li>
+    <li>
         <a href="/clients">
             <span class="isw-list"></span><span class="text">Pelanggan</span>
         </a>
