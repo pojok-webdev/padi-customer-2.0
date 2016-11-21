@@ -116,6 +116,26 @@
                                     <th width="10%" class="text-center">Aksi</th>
                                 </tr>
                             </thead>
+                            <tbody>
+                                <?php foreach($clients as $client){?>
+                                    <tr>
+                                        <td><?php echo $client->name;?></td>
+                                        <td><?php echo $client->alias;?></td>
+                                        <td><?php echo $client->am;?></td>
+                                        <td><?php echo $client->address;?></td>
+                                        <td><div class="btn-group pull-right">                                        
+                                        <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Survey</a></li>
+                                            <li><a href="#">Install</a></li>
+                                            <li><a href="#">Add Ticket</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Edit</a></li>
+                                        </ul>
+                                    </div></td>
+                                    </tr>
+                                <?php }?>
+                            </tbody>
                         </table>
                     </div>
                 </div>
