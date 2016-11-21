@@ -17,7 +17,7 @@
         <div class="breadLine">
             <ul class="breadcrumb">
                 <li><a href="/">PadiApp</a> <span class="divider">></span></li>     
-                <li class="active">Pelanggan</li>
+                <li class="active">Survey</li>
             </ul>
             <ul class="buttons">
                 <li>
@@ -91,7 +91,7 @@
                 <div class="span12">                    
                     <div class="head clearfix">
                         <div class="isw-grid"></div>
-                        <h1>Leads</h1>
+                        <h1>Survey</h1>
                         <ul class="buttons">
                             <li><a href="#" class="isw-download"></a></li>                                                        
                             <li><a href="#" class="isw-attachment"></a></li>
@@ -117,12 +117,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach($leads as $lead){?>
+                                <?php foreach($surveys as $survey){?>
                                     <tr>
-                                        <td><?php echo $lead->name;?></td>
-                                        <td><?php echo $lead->alias;?></td>
-                                        <td><?php echo $lead->am;?></td>
-                                        <td><?php echo $lead->address;?></td>
+                                        <td><?php echo $survey->name;?></td>
+                                        <td><?php echo $survey->alias;?></td>
+                                        <td><?php echo $survey->am;?></td>
+                                        <td><?php echo $survey->address;?></td>
                                         <td><div class="btn-group pull-right">                                        
                                         <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
                                         <ul class="dropdown-menu">

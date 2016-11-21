@@ -37,6 +37,11 @@
         </a>
     </li>
     <li>
+        <a href="/surveys">
+            <span class="isw-list"></span><span class="text">Survey</span>
+        </a>
+    </li>
+    <li>
         <a href="/clients">
             <span class="isw-list"></span><span class="text">Pelanggan</span>
         </a>
