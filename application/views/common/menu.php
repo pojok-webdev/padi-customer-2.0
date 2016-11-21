@@ -27,13 +27,18 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="/leads">
             <span class="isw-list"></span><span class="text">Leads</span>
         </a>
     </li>
     <li>
         <a href="#">
             <span class="isw-list"></span><span class="text">Prospect</span>
+        </a>
+    </li>
+    <li>
+        <a href="/clients">
+            <span class="isw-list"></span><span class="text">Pelanggan</span>
         </a>
     </li>
 </ul>
