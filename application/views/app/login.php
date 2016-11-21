@@ -67,7 +67,7 @@
         <div class="loginHead">
             <img src="img/logo.png" alt="Login - PadiApp" title="PadiApp"/>
         </div>
-        <form class="form-horizontal" action="index.html" method="POST">            
+        <form class="form-horizontal" action="login_handler" method="POST">            
             <div class="control-group">
                 <label for="inputEmail">Email</label>                
                 <input type="text" id="inputEmail"/>

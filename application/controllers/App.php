@@ -9,4 +9,7 @@ class App extends CI_Controller{
     function login(){
         $this->load->view("app/login");
     }
+    function login_handler(){
+        redirect("/leads");
+    }
 }
