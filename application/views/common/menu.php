@@ -32,7 +32,7 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="/prospects">
             <span class="isw-list"></span><span class="text">Prospect</span>
         </a>
     </li>
