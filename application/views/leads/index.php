@@ -62,11 +62,7 @@
                                         <td><div class="btn-group pull-right">                                        
                                         <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Survey</a></li>
-                                            <li><a href="#">Install</a></li>
-                                            <li><a href="#">Add Ticket</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">Jadikan Prospect</a></li>
                                         </ul>
                                     </div></td>
                                     </tr>
