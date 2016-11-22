@@ -57,7 +57,7 @@
                                     <tr>
                                         <td><?php echo $survey->name;?></td>
                                         <td><?php echo $survey->alias;?></td>
-                                        <td><?php echo $survey->am;?></td>
+                                        <td><?php echo humanize($lead->am);?></td>
                                         <td><?php echo $survey->address;?></td>
                                         <td><div class="btn-group pull-right">                                        
                                         <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
