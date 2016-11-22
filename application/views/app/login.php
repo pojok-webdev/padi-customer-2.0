@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <![endif]-->
     
-    <title>Login - PadiApp</title>
+    <title><?php echo $title;?></title>
 
     <link rel="icon" type="image/ico" href="favicon.ico"/>
     
@@ -67,14 +67,14 @@
         <div class="loginHead">
             <img src="img/logo.png" alt="Login - PadiApp" title="PadiApp"/>
         </div>
-        <form class="form-horizontal" action="login_handler" method="POST">            
+        <form class="form-horizontal" action="/app/login_handler" method="POST">            
             <div class="control-group">
                 <label for="inputEmail">Email</label>                
-                <input type="text" id="inputEmail"/>
+                <input type="text" id="inputEmail" name="email" />
             </div>
             <div class="control-group">
                 <label for="inputPassword">Password</label>                
-                <input type="password" id="inputPassword"/>                
+                <input type="password" id="inputPassword" name="password" />                
             </div>
             <div class="form-actions">
                 <button type="submit" class="btn btn-block">Sign in</button>
