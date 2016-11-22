@@ -2,7 +2,7 @@
 <div class="breadLine">            
     <div class="arrow"></div>
     <div class="adminControl active">
-        Hi, <?php echo humanize($_SESSION["username"]);?>
+        Hi, <?php get_sess_username();?>
     </div>
 </div>
 

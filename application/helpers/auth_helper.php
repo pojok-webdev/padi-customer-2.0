@@ -17,6 +17,13 @@ function authentic($email,$password){
 }
 function create_session($email,$username){
     session_start();
-    $_SESSION["username"] = $email;
+    $_SESSION["email"] = $email;
     $_SESSION["username"] = $username;
+}
+function get_sess_username(){
+    if(isset($_SESSION["username"])){
+        echo humanize($_SESSION["username"]);
+    }else{
+        redirect("/app/login");
+    }
 }

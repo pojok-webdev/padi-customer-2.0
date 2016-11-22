@@ -8,6 +8,7 @@ class App extends CI_Controller{
         parent::__construct();
     }
     function logout(){
+        session_destroy();
         redirect("app/login");
     }
     function login(){
