@@ -1,4 +1,8 @@
 <?php
+/*
+    Created by Puji W Prayitno
+    puji@padi.net.id - 2016
+*/
 class App extends CI_Controller{
     function __construct(){
         parent::__construct();
@@ -21,10 +25,5 @@ class App extends CI_Controller{
         }else{
             redirect("/app/login/false");
         }
-    }
-    function hasher(){
-        echo "SHA ; " . sha1(sha1("puji")) . "\n";
-        echo "pdb : " . authentic1('puji@padi.net.id','puji') . "\n";
-        echo "pwd : " . authentic2('puji@padi.net.id','puji') . "\n";
     }
 }
