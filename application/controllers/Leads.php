@@ -7,7 +7,6 @@ class Leads extends CI_Controller{
         check_login();
         $clients = $this->lead->get();
         $data['leads'] = $clients;
-        //$data['sess_username'] = $_SESSION["username"];
         $this->load->view("leads/index",$data);
     }
 }
