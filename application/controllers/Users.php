@@ -7,6 +7,7 @@ class Users extends CI_Controller{
         $this->load->view('users/tables',$data);
     }
     function setting(){
+        check_login();
         $this->load->view("users/setting");
     }
 }
