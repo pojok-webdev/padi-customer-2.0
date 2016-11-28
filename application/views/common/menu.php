@@ -22,7 +22,7 @@
 
 <ul class="navigation">            
     <li>
-        <a href="index.html">
+        <a href="/dashboard">
             <span class="isw-grid"></span><span class="text">Dashboard</span>
         </a>
     </li>

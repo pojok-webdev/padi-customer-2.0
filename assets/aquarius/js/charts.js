@@ -29,7 +29,7 @@ $(document).ready(function(){
 
         /* CHART - 1*/
 
-        var sin1 = [], sin2 = [], cos1 = [], cos2 = [];
+        var sin1 = [], sin2 = [], cos1 = [], cos2 = [],lead = [],prospect = [],survey = [],install = [];
 
         for (var i = 0; i < 14; i += 0.3) {
             sin1.push([i, Math.sin(i)]);
@@ -37,11 +37,70 @@ $(document).ready(function(){
             cos1.push([i, Math.cos(i)]);
             cos2.push([i, Math.cos(i+1.57)]);
         }
+        lead.push([0,21]);
+        lead.push([1,19]);
+        lead.push([2,24]);
+        lead.push([3,25]);
+        lead.push([4,36]);
+        lead.push([5,15]);
+        lead.push([6,28]);
+        lead.push([7,15]);
+        lead.push([8,39]);
+        lead.push([9,12]);
+        lead.push([10,24]);
+        lead.push([11,35]);
+        lead.push([12,26]);
+        lead.push([13,5]);
 
-        $.plot($("#chart-1"), [ { data: sin1, label: "sin(x)"}, { data: sin2, label: "sin(y)"} , { data: cos1, label: "cos(x)"}, { data: cos2, label: "cos(y)"} ], {
+        prospect.push([0,41]);
+        prospect.push([1,33]);
+        prospect.push([2,24]);
+        prospect.push([3,36]);
+        prospect.push([4,43]);
+        prospect.push([5,27]);
+        prospect.push([6,25]);
+        prospect.push([7,38]);
+        prospect.push([8,12]);
+        prospect.push([9,14]);
+        prospect.push([10,44]);
+        prospect.push([11,25]);
+        prospect.push([12,8]);
+        prospect.push([13,5]);
+
+        survey.push([0,21]);
+        survey.push([1,11]);
+        survey.push([2,14]);
+        survey.push([3,15]);
+        survey.push([4,10]);
+        survey.push([5,24]);
+        survey.push([6,3]);
+        survey.push([7,9]);
+        survey.push([8,23]);
+        survey.push([9,8]);
+        survey.push([10,7]);
+        survey.push([11,12]);
+        survey.push([12,23]);
+        survey.push([13,2]);
+
+        install.push([0,1]);
+        install.push([1,0]);
+        install.push([2,2]);
+        install.push([3,21]);
+        install.push([4,11]);
+        install.push([5,8]);
+        install.push([6,21]);
+        install.push([7,9]);
+        install.push([8,22]);
+        install.push([9,13]);
+        install.push([10,8]);
+        install.push([11,7]);
+        install.push([12,1]);
+        install.push([13,2]);        
+        
+        $.plot($("#chart-1"), [ {data:lead,label:'Lead'},{data:prospect,label:'Prospect'},{data:survey,label:'Survey'},{data:install,label:'Install'} ], {
                 series: {lines: { show: true }, points: { show: true }},
                 grid: { hoverable: true, clickable: true },
-                yaxis: { min: -1.1, max: 1.1 }
+                yaxis: { min: 0, max: 50 }
                 });
 
         /* eof CHART - 1*/

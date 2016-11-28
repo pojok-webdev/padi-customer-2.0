@@ -5,8 +5,9 @@ class Dashboard extends CI_Controller{
 	}
 	function index(){
 		$this->load->model('app_log');
+        check_login();
 		$data['lastactivity'] = $this->app_log->getlastactivity();
 		$data['amount'] = $this->app_log->getamount();
-		$this->load->view('dashboard/index',$data);
+		$this->load->view('dashboard/dashboard',$data);
 	}
 }
