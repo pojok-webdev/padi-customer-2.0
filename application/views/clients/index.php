@@ -57,7 +57,7 @@
                                     <tr>
                                         <td><?php echo $client->name;?></td>
                                         <td><?php echo $client->alias;?></td>
-                                        <td><?php echo humanize($lead->am);?></td>
+                                        <td><?php echo humanize($client->am);?></td>
                                         <td><?php echo $client->address;?></td>
                                         <td><div class="btn-group pull-right">                                        
                                         <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
